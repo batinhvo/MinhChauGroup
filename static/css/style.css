@@ -990,8 +990,14 @@ h6{
 
 img{
 	display:inline-block;
-	max-width:100%;
+	width:100%;
 	height:auto;	
+}
+
+.logo img{
+	display:inline-block;
+	width:auto;
+	height:52px;	
 }
 
 /*** 
@@ -1347,7 +1353,7 @@ img{
 	left:0px;
 	top:0px;
 	bottom:0px;
-	width:150%;
+	width:155%;
 	background-image: -ms-linear-gradient(left, #F7941D 0%, #ffc008 100%);
 	background-image: -moz-linear-gradient(left, #F7941D 0%, #ffc008 100%);
 	background-image: -o-linear-gradient(left, #F7941D 0%, #ffc008 100%);
@@ -3321,7 +3327,7 @@ img{
 	right: 350px;
 	bottom: 100%;
 	z-index: 3;
-	border-bottom: 360px solid #263b8a;
+	border-bottom: 360px solid #243c8f;
 	border-right: 1700px solid transparent;
 }
 
@@ -3331,7 +3337,7 @@ img{
 	left: 100px;
 	bottom: 100%;
 	z-index: 3;
-	border-bottom: 440px solid #263b8a;
+	border-bottom: 440px solid #243c8f;
 	border-left: 1780px solid transparent;
 }
 
@@ -4180,7 +4186,7 @@ img{
 	background-image: -o-linear-gradient(bottom, #010100 0%, #222121 100%);
 	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #010100), color-stop(100, #222121));
 	background-image: -webkit-linear-gradient(bottom, #010100 0%, #222121 100%);
-	background-image: linear-gradient(to top, #073111 0%, #3E9352 100%);
+	background-image: linear-gradient(to top, #243c8f 0%, #243c8f 100%);
 }
 
 .testimonial-block .inner-box .quote-icon{
@@ -5357,7 +5363,7 @@ img{
 	background-image: -o-linear-gradient(bottom, #010100 0%, #222121 100%);
 	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #010100), color-stop(100, #222121));
 	background-image: -webkit-linear-gradient(bottom, #010100 0%, #222121 100%);
-	background-image: linear-gradient(to top, #263b8a 0%, #0a1849 100%);
+	background-image: linear-gradient(to top, #fff 0%, #fff 100%);
 }
 
 .main-footer .logo-widget .logo{
@@ -5372,7 +5378,7 @@ img{
 
 .main-footer .logo-widget .text p{
 	position:relative;
-	color:#ffffff;
+	color:#243c8f;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.8em;
@@ -5391,14 +5397,14 @@ img{
 
 .main-footer .logo-widget .social-box li a{
 	position:relative;
-	color:#ffffff;
+	color:#243c8f;
 	font-size:15px;
 	width:40px;
 	height:40px;
 	line-height:38px;
 	text-align:center;
 	border-radius:50px;
-	border:1px dashed #ffffff;
+	border:1px dashed #243c8f;
 	transition:all 0.3s ease;
 	-moz-transition:all 0.3s ease;
 	-webkit-transition:all 0.3s ease;
@@ -5618,12 +5624,12 @@ img{
 	background-image: -o-linear-gradient(bottom, #F7941D 0%, #febe09 100%);
 	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #F7941D), color-stop(100, #febe09));
 	background-image: -webkit-linear-gradient(bottom, #F7941D 0%, #febe09 100%);
-	background-image: linear-gradient(to top, #F7941D 0%, #febe09 100%);
+	background-image: linear-gradient(to top, #243c8f 0%, #243c8f 100%);
 }
 
 .main-footer .footer-bottom .copyright{
 	position:relative;
-	color:#222222;
+	color:#fff;
 	font-size:16px;
 	font-weight:500;
 }
@@ -5631,7 +5637,7 @@ img{
 .main-footer .footer-bottom .copyright a{
 	position:relative;
 	font-weight:600;
-	color:#222222;
+	color:#fff;
 }
 
 .main-footer .footer-nav{
@@ -5645,12 +5651,12 @@ img{
 	margin-right:14px;
 	line-height:1em;
 	display:inline-block;
-	border-right:2px solid #222222;
+	border-right:2px solid #fff;
 }
 
 .main-footer .footer-nav li a{
 	position:relative;
-	color:#222222;
+	color:#fff;
 	font-size:16px;
 	font-weight:700;
 }
@@ -7069,7 +7075,7 @@ img{
 	width:100%;
 	opacity:0;
 	transform:scale(0.2,1);
-	background-color:#ffc009;
+	background-color:#ffc00900;
 	-webkit-transition:all 600ms ease;
 	-ms-transition:all 600ms ease;
 	-o-transition:all 600ms ease;

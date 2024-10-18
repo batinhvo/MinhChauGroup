@@ -13130,8 +13130,8 @@ img{
 	left: 0px;
 	bottom: 100%;
 	z-index: 2;
-	border-bottom: 60px solid #3e9352;
-	border-right: 190px solid transparent;
+	border-bottom: 57px solid #3e9352;
+	border-right: 184px solid transparent;
 }
 
 .triangle .triangle-blue-r {
@@ -13250,24 +13250,24 @@ img{
 }
 
 .about-section .triangle-orange {
-	border-bottom: 370px solid #e0a85e
+	border-bottom: 330px solid #e0a85e
 	;
-	border-left: 1850px solid transparent;
+	border-left: 1770px solid transparent;
 }
 
 .about-section .triangle-green {
-	border-bottom: 325px solid #3e9352;
-	border-right: 1430px solid transparent;
+	border-bottom: 290px solid #3e9352;
+	border-right: 1270px solid transparent;
 }
 
 .about-section .triangle-blue-r {
-	border-bottom: 260px solid #243c8f;
-	border-right: 1190px solid transparent;
+	border-bottom: 220px solid #243c8f;
+	border-right: 1000px solid transparent;
 }
 
 .about-section .triangle-blue-l {
-	border-bottom: 335px solid #243c8f;
-	border-left: 1710px solid transparent;
+	border-bottom: 300px solid #243c8f;
+	border-left: 1600px solid transparent;
 }
 
 

@@ -13120,8 +13120,8 @@ img{
 	right: 0px;
 	bottom: 100%;
 	z-index: 1;
-	border-bottom: 110px solid #e0a85e;
-	border-left: 290px solid transparent;
+	border-bottom: 78px solid #e0a85e;
+	border-left: 295px solid transparent;
 }
 
 .triangle .triangle-green {
@@ -13130,8 +13130,8 @@ img{
 	left: 0px;
 	bottom: 100%;
 	z-index: 2;
-	border-bottom: 55px solid #3e9352;
-	border-right: 180px solid transparent;
+	border-bottom: 60px solid #3e9352;
+	border-right: 190px solid transparent;
 }
 
 .triangle .triangle-blue-r {
@@ -13150,8 +13150,8 @@ img{
 	right: 0px;
 	bottom: 100%;
 	z-index: 3;
-	border-bottom: 103px solid #243c8f;
-	border-left: 273px solid transparent;
+	border-bottom: 70px solid #243c8f;
+	border-left: 270px solid transparent;
 }
 
 /* brand - index 2 */
@@ -13160,6 +13160,11 @@ img{
 	border-bottom: 80px solid #e0a85e;
 	border-left: 230px solid transparent;
 }
+
+.service-block-two .triangle-green {
+	border-bottom: 60px solid #3e9352;
+	border-right: 190px solid transparent;
+} 
 
 .service-block-two .triangle-blue-l {
 	border-bottom: 75px solid #243c8f;
@@ -13170,11 +13175,6 @@ img{
 	border-bottom: 48px solid #243c8f;
 	border-right: 160px solid transparent;
 }
-
-.triangle .triangle-green {
-	border-bottom: 55px solid #3e9352;
-	border-right: 180px solid transparent;
-} 
 
 @media (max-width: 450px) {
 	.service-block-two .triangle-orange {
@@ -13192,7 +13192,7 @@ img{
 		border-right: 175px solid transparent;
 	}
 	
-	.triangle .triangle-green {
+	.service-block-two .triangle-green {
 		border-bottom: 62px solid #3e9352;
 		border-right: 195px solid transparent;
 	}
@@ -13201,6 +13201,9 @@ img{
 /* end brand - index 2 */
 
 /* brand line index 1*/
+
+
+
 
 @media (min-width: 768px) and (max-width:1500px) {	
 	.about-section .triangle-orange {
@@ -13224,6 +13227,28 @@ img{
 	}
 }
 
+@media (max-width:450px) {	
+	.about-section .triangle-orange {
+		border-bottom: 180px solid #e0a85e !important;
+		border-left: 435px solid transparent !important;
+	}
+
+	.about-section .triangle-green {
+		border-bottom: 135px solid #3e9352 !important;
+		border-right: 370px solid transparent !important;
+	}
+
+	.about-section .triangle-blue-r {
+		border-bottom: 100px solid #243c8f !important;
+		border-right: 300px solid transparent !important; 
+	}
+
+	.about-section .triangle-blue-l {
+		border-bottom: 160px solid #243c8f !important;
+		border-left: 400px solid transparent !important;
+	}
+}
+
 .about-section .triangle-orange {
 	border-bottom: 370px solid #e0a85e
 	;
@@ -13231,18 +13256,18 @@ img{
 }
 
 .about-section .triangle-green {
-	border-bottom: 330px solid #3e9352;
-	border-right: 1500px solid transparent;
+	border-bottom: 350px solid #3e9352;
+	border-right: 1430px solid transparent;
 }
 
 .about-section .triangle-blue-r {
 	border-bottom: 290px solid #243c8f;
-	border-right: 1350px solid transparent;
+	border-right: 1190px solid transparent;
 }
 
 .about-section .triangle-blue-l {
-	border-bottom: 350px solid #243c8f;
-	border-left: 1750px solid transparent;
+	border-bottom: 335px solid #243c8f;
+	border-left: 1710px solid transparent;
 }
 
 

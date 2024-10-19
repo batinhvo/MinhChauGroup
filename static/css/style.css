@@ -2368,7 +2368,9 @@ img{
 	background-image: -o-linear-gradient(top, #f7941d 0%, #02108B 100%);
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f7941d), color-stop(100, #02108B));
 	background-image: -webkit-linear-gradient(top, #f7941d 0%, #02108B 100%);
-	background-image: linear-gradient(to bottom, #f7941d 0%, #02108B 100%);
+	background-image: url(../images/background/background-brand-900x1200.png), linear-gradient(to bottom, #f7941d 0%, #02108B 100%);
+	background-size: cover;
+	background-position: 50% 70%;
 	color: #fff;
 }
 
@@ -3021,7 +3023,7 @@ img{
 }
 
 .main-slider .tp-dottedoverlay{
-	background: #263b8ade !important;	
+	background: linear-gradient(to top, transparent, #253a89 100%) !important;	
 }
 
 .main-slider .title{
@@ -3045,11 +3047,11 @@ img{
 
 .main-slider .text{
 	position: relative;
-    color: #ffffff;
-    font-size: 18px;
+    color: #FFFFFF;
+    font-size: 20px;
     line-height: 1.8em;
     margin-bottom: 40px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .main-slider .btns-box{
@@ -3764,7 +3766,8 @@ img{
 	background-image: -o-linear-gradient(bottom, #F7941D 0%, #febe09 100%);
 	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #F7941D), color-stop(100, #febe09));
 	background-image: -webkit-linear-gradient(bottom, #F7941D 0%, #febe09 100%);
-	background-image: linear-gradient(to top, #F7941D 0%, #febe09 100%);
+	background-image: url(../images/background/background-brand-900x1200.png) ,linear-gradient(to top, #243c8f 0%, #fff 100%);
+	background-size: cover;
 }
 
 .service-block .inner-box:hover .overlay-box{
@@ -3796,7 +3799,7 @@ img{
 .service-block .overlay-inner .icon-box{
 	position:relative;
 	font-size:56px;
-	color:#000000;
+	color:#243c8f;
 	line-height:1em;
 	font-weight:400;
 	text-align:center;
@@ -3816,7 +3819,7 @@ img{
 
 .service-block .overlay-inner .read-more{
 	position:relative;
-	color:#222222;
+	color:#fff;
 	font-size:16px;
 	line-height:1.8em;
 	margin-top:20px;
@@ -4330,14 +4333,15 @@ img{
 	right:0px;
 	bottom:0px;
 	opacity:0.90;
-	outline: 2px solid #ffffff;
-	outline-offset: -20px;
+	outline: 2px solid #243c8f;
+	outline-offset: 0px;
 	background-image: -ms-linear-gradient(bottom, #F7941D 0%, #febe09 100%);
 	background-image: -moz-linear-gradient(bottom, #F7941D 0%, #febe09 100%);
 	background-image: -o-linear-gradient(bottom, #F7941D 0%, #febe09 100%);
 	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #F7941D), color-stop(100, #febe09));
 	background-image: -webkit-linear-gradient(bottom, #F7941D 0%, #febe09 100%);
-	background-image: linear-gradient(to top, #0b9046 0%, #027836 100%);
+	background-image: url(../images/background/background-brand-900x1200.png), linear-gradient(to top, #fff 0%, #fff 100%);
+	background-size: cover;
 }
 
 .gallery-block .inner-box:hover .overlay-box{
@@ -4376,12 +4380,12 @@ img{
 
 .gallery-block .overlay-box h6 a{
 	position:relative;
-	color:#fff;
+	color:#243c8f;
 }
 
 .gallery-block .overlay-box .category{
 	position:relative;
-	color:#ffffff;
+	color:#243c8f;
 	font-size:16px;
 	margin-bottom:18px;
 }
@@ -4409,7 +4413,7 @@ img{
 	background-image: -o-linear-gradient(bottom, #010100 0%, #222121 100%);
 	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #010100), color-stop(100, #222121));
 	background-image: -webkit-linear-gradient(bottom, #010100 0%, #222121 100%);
-	background-image: linear-gradient(to top, #0b9046 0%, #027836 100%);
+	background-image: linear-gradient(to top, #122361 0%, #263b8a 100%);
 }
 
 .gallery-block .overlay-inner .link .icon{
@@ -4529,7 +4533,8 @@ img{
 	-webkit-transition:all 600ms ease;
 	-ms-transition:all 600ms ease;
 	-o-transition:all 600ms ease;
-	background-color:rgba(0,0,0,0.30);
+	background: url(../images/background/background-brand-900x1200.png), rgba(0,0,0,0.30);
+	background-size: cover;
 	border-radius:15px 15px 0px 15px;
 }
 
@@ -6071,7 +6076,8 @@ img{
 	background-image: -o-linear-gradient(bottom, #0B0F48 0%, #02108C 100%);
 	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #0B0F48), color-stop(100, #02108C));
 	background-image: -webkit-linear-gradient(bottom, #0B0F48 0%, #02108C 100%);
-	background-image: linear-gradient(to top, #0B0F48 0%, #02108C 100%);
+	background-image: url(../images/background/background-brand-2000.png) ,linear-gradient(to top, #0B0F48 0%, #02108C 100%);
+	background-size: cover;
 }
 
 .video-section .inner-container .video-box img{
@@ -6736,7 +6742,8 @@ img{
 	height:50%;
 	z-index:1;
 	opacity:0.5;
-	background-color:#02108b;
+	background: url(../images/background/background-logo-900x900.png) ,#02108b;
+	background-size: cover;
 	-webkit-transition:all 600ms ease;
 	-ms-transition:all 600ms ease;
 	-o-transition:all 600ms ease;
@@ -6752,7 +6759,8 @@ img{
 	width:0%;
 	height:50%;
 	opacity:0.5;
-	background-color:#02108b;
+	background:url(../images/background/background-brand-2000.png), #02108b;
+	background-size: cover;
 	-webkit-transition:all 600ms ease;
 	-ms-transition:all 600ms ease;
 	-o-transition:all 600ms ease;
@@ -6985,7 +6993,10 @@ img{
 	position:relative;
 	border-radius:5px;
 	overflow:hidden;
-	background-color:#f7951d;
+	/* background-color:#f7951d; */
+	background: url(../images/background/background-brand-logo-900x1200.png);
+	background-size: cover;
+	background-position: 30% 50%;
 }
 
 .service-block-four .inner-box .image img{
@@ -7000,7 +7011,7 @@ img{
 }
 
 .service-block-four .inner-box:hover .image img{
-	opacity:0.5;
+	opacity:0.3;
 	transform:scale(1.05,1.05);
 }
 
@@ -7149,7 +7160,9 @@ img{
 	top:0px;
 	right:0px;
 	bottom:0px;
-	background-color:#263b8ade;
+	background: url(../images/background/background-brand-2000.png),#263b8ade;
+	background-size: cover;
+	background-position: 50% 90%;
 }
 
 .about-section-two .content-column{

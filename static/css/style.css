@@ -343,7 +343,7 @@ h6{
 	display: inline-block;
 	font-size: 16px;
 	line-height: 30px;
-	color: #ffffff;
+	color: #e6a251;
 	padding: 12px 32px 12px;
 	font-weight: 400;
 	overflow: hidden;
@@ -351,7 +351,7 @@ h6{
 	letter-spacing:1px;
 	border-radius:5px;
 	text-transform: capitalize;
-	border:2px solid #ffffff;
+	border:2px solid #e6a251;
 	
 }
 
@@ -3024,14 +3024,14 @@ img{
 }
 
 .main-slider .tp-dottedoverlay{
-	background: url(../images/background/background-brand-2000.png) ,linear-gradient(to top, transparent 40%, #fff 100%) !important;	
+	background: url(../images/background/background-brand-2000.png) ,linear-gradient(to top, #ffffff50, #ffffff70 100%) !important;	
 	background-size: cover !important;
 	background-position: 50% 50%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 	.main-slider .tp-dottedoverlay{
-		background: url(../images/background/background-brand-1200x900.png) ,linear-gradient(to top, transparent 40%, #fff 100%) !important;	
+		background: url(../images/background/background-brand-1200x900.png) ,linear-gradient(to left, #ffffff70, #ffffffe3 100%) !important;	
 		background-size: cover !important;
 		background-position: 50% 50%;
 	}
@@ -3039,7 +3039,7 @@ img{
 
 .main-slider .title{
 	position: relative;
-    color: #f99b1a;
+    color: #059447;
     font-weight: 600;
     font-size: 24px;
     line-height: 1.4em;
@@ -3058,7 +3058,7 @@ img{
 
 .main-slider .text{
 	position: relative;
-    color: #059447;
+    color: #e6a251;
     font-size: 20px;
     line-height: 1.8em;
     margin-bottom: 40px;

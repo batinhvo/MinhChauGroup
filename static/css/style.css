@@ -1153,6 +1153,7 @@ img{
 	position:relative;
 	z-index:20;
 	width:100%;
+	box-shadow: 0px 0px 5px #777;
 }
 
 .main-header .header-top{
@@ -3023,7 +3024,17 @@ img{
 }
 
 .main-slider .tp-dottedoverlay{
-	background: linear-gradient(to top, transparent, #253a89 100%) !important;	
+	background: url(../images/background/background-brand-2000.png) ,linear-gradient(to top, transparent 40%, #fff 100%) !important;	
+	background-size: cover !important;
+	background-position: 50% 50%;
+}
+
+@media (max-width: 768px) {
+	.main-slider .tp-dottedoverlay{
+		background: url(../images/background/background-brand-1200x900.png) ,linear-gradient(to top, transparent 40%, #fff 100%) !important;	
+		background-size: cover !important;
+		background-position: 50% 50%;
+	}
 }
 
 .main-slider .title{
@@ -3038,7 +3049,7 @@ img{
 
 .main-slider h1{
 	position: relative;
-    color: #ffffff;
+    color: #243c8f;
     font-weight: 700;
     line-height: 1.2em;
     margin-bottom: 30px;
@@ -3047,7 +3058,7 @@ img{
 
 .main-slider .text{
 	position: relative;
-    color: #FFFFFF;
+    color: #059447;
     font-size: 20px;
     line-height: 1.8em;
     margin-bottom: 40px;

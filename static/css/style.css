@@ -995,6 +995,21 @@ h6{
 
 .preloader{ position:fixed; left:0px; top:0px; width:100%; height:100%; z-index:999999; background-color:#ffffff; background-position:center center; background-repeat:no-repeat; background-image:url(../images/icons/preloader.svg); background-size:140px;}
 
+@media (max-width: 450px) {
+	.fullwidthbanner-container .fullwidthabanner {
+		width: 100%;
+		height: 380px !important;
+		position: relative;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 992px) {
+	.fullwidthbanner-container .fullwidthabanner {
+		width: 100%;
+		height: 620px !important;
+		position: relative;
+	}
+}
 
 img{
 	display:inline-block;
@@ -3031,9 +3046,9 @@ img{
 
 @media (max-width: 992px) {
 	.main-slider .tp-dottedoverlay{
-		background: url(../images/background/background-brand-1200x900.png) ,linear-gradient(to left, #ffffff70, #ffffffe3 100%) !important;	
+		background: url(../images/background/background-brand-2000.png) ,linear-gradient(to top, #ffffff70, #ffffffe3 100%) !important;	
 		background-size: cover !important;
-		background-position: 50% 50%;
+		background-position: 50% 50% !important;
 	}
 }
 
@@ -3158,7 +3173,17 @@ img{
 }
 
 .main-slider-two .tp-dottedoverlay{
-	background: #263b8ade !important;	
+	background: linear-gradient(to left, #ffffff00, #ffffff70, #ffffff00) !important;	
+	background-size: cover !important;
+	background-position: 50% 50%;
+}
+
+@media (max-width: 992px) {
+	.main-slider-two .tp-dottedoverlay{
+		background: url(../images/background/background-brand-2000.png) ,linear-gradient(to top, #ffffff70, #ffffffe3 100%) !important;	
+		background-size: cover !important;
+		background-position: 30% 50% !important;
+	}
 }
 
 .main-slider-two .title{
@@ -3175,7 +3200,7 @@ img{
 
 .main-slider-two h1{
 	position: relative;
-    color: #ffffff;
+    color: #243c8f;
     font-weight: 700;
     line-height: 1.2em;
     margin-bottom: 30px;
@@ -3183,10 +3208,15 @@ img{
 	font-family: 'Montserrat', sans-serif;
 }
 
+.main-slider-two h1:nth-of-type(1) {
+	color: #e6a251;
+	font-size: 20px;
+}
+
 .main-slider-two .text{
 	position: relative;
-    color: #ffffff;
-    font-size: 18px;
+    color: #059447;
+    font-size: 22px;
     line-height: 1.8em;
     margin-bottom: 40px;
     font-weight: 400;

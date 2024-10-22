@@ -2384,7 +2384,7 @@ img{
 	background-image: -o-linear-gradient(top, #f7941d 0%, #02108B 100%);
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f7941d), color-stop(100, #02108B));
 	background-image: -webkit-linear-gradient(top, #f7941d 0%, #02108B 100%);
-	background-image: url(../images/background/background-brand-900x1200.png), linear-gradient(to bottom, #f7941d 0%, #02108B 100%);
+	background-image: url(../images/background/background-brand-900x1200.png), linear-gradient(to top, #243c8f 0%, #02108B 100%);
 	background-size: cover;
 	background-position: 50% 70%;
 	color: #fff;
@@ -2396,7 +2396,7 @@ img{
 
 .main-header.header-style-three .search-box-outer:before{
 	background-image:none;
-	background-color:#ffffff;
+	background-image: linear-gradient(to right, #F7951D 0%, #ffc009 100%);
 }
 
 .main-header.header-style-three .options-box{
@@ -2782,8 +2782,12 @@ img{
 	font-size: 40px;
 	line-height: 50px;
 	cursor: pointer;
-	color:#ffffff;
+	color:#fff;
 	display: none;
+}
+
+.nav-outer .mobile-nav-toggler.three{
+	color:#243c8f;
 }
 
 .mobile-menu{
@@ -3038,17 +3042,23 @@ img{
 	z-index:5 !important;
 }
 
+@media (max-width: 420px) {
+	.main-slider .fullwidthbanner-container {
+		height: 290px !important;
+	}
+}
+
 .main-slider .tp-dottedoverlay{
 	background: url(../images/background/background-brand-2000.png) ,linear-gradient(to top, #ffffff50, #ffffff70 100%) !important;	
 	background-size: cover !important;
 	background-position: 50% 50%;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1025px) {
 	.main-slider .tp-dottedoverlay{
 		background: url(../images/background/background-brand-2000.png) ,linear-gradient(to top, #ffffff70, #ffffffe3 100%) !important;	
 		background-size: cover !important;
-		background-position: 50% 50% !important;
+		background-position: 30% 50% !important;
 	}
 }
 
@@ -3088,6 +3098,18 @@ img{
 	position:relative;
 	margin-right:15px;
 	display:inline-block;
+}
+
+@media (max-width: 1024px) {
+	.btn-style-three .txt,
+	.btn-style-two .txt {
+		font-size: 12px !important;
+	}
+
+	.main-slider .btns-box .theme-btn,
+	.main-slider .btns-box .theme-btn.btn-style-two {
+		padding: 8px 26px 6px 26px !important;
+	}
 }
 
 .main-slider .tp-bannertimer,

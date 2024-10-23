@@ -7,12 +7,13 @@
 }
 
 @media only screen and (max-width: 1600px){
-	
+	.icon-header {
+		display: block;
+	}
 }
 
 @media only screen and (max-width: 1340px){
 
-	
 }
 
 @media only screen and (max-width: 1140px){
@@ -215,7 +216,92 @@
 	
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+	.logo img{
+		height:36px;	
+	}
+}
+
+@media (min-width: 1200px) {
+	.main-slider-two h1:nth-of-type(1) {
+		color: #243C8F;
+		font-size: 48px !important;
+	}
+
+	.main-slider-two h1{
+		font-size: 30px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.main-header .search-box-outer::before,
+	.nav-outer .btn-style-one,
+	.sticky-header .btn-style-one {
+		transform: skewX(-30deg) !important; 
+	}
+}
+
+@media (max-width: 420px) {
+	.main-slider .fullwidthbanner-container {
+		height: 290px !important;
+	}
+}
+
+@media (max-width: 450px) {
+	.main-slider-one .fullwidthbanner-container .fullwidthabanner,
+	.main-slider-two .fullwidthbanner-container .fullwidthabanner {
+		width: 100%;
+		height: 380px !important;
+		position: relative;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 992px) {
+	.main-slider-one .fullwidthbanner-container .fullwidthabanner,
+	.main-slider-two .fullwidthbanner-container .fullwidthabanner {
+		width: 100%;
+		height: 620px !important;
+		position: relative;
+	}
+
+	.main-slider-two .tp-dottedoverlay{
+		background: url(../images/background/background-brand-2000.png) ,linear-gradient(to top, #ffffff70, #ffffffe3 100%) !important;	
+		background-size: cover !important;
+		background-position: 30% 50% !important;
+	}
+
+}
+
 @media only screen and (max-width: 1023px){
+
+	.main-slider-three h1{
+		display: flex;
+		justify-content: end;
+		font-size: 24px;
+	}
+
+	.main-slider-three .text,
+	.main-slider-three .title,
+	.main-slider-three .btns-box{
+		display: flex;
+		justify-content: end;
+	}
+
+	.btn-style-three .txt,
+	.btn-style-two .txt {
+		font-size: 12px !important;
+	}
+
+	.main-slider .btns-box .theme-btn,
+	.main-slider .btns-box .theme-btn.btn-style-two {
+		padding: 8px 26px 6px 26px !important;
+	}
+
+	.main-slider .tp-dottedoverlay{
+		background: url(../images/background/background-brand-2000.png) ,linear-gradient(to top, #ffffff70, #ffffffe3 100%) !important;	
+		background-size: cover !important;
+		background-position: 30% 50% !important;
+	}
 	
 	.main-header .info-box{
 		margin-left:0px;
@@ -1345,12 +1431,17 @@
 
 @media only screen and (max-width: 479px) {
 	
-	h1{
+	h1 {
 		font-size:24px;
 	}
 	
 	.main-slider-three h1{
-		font-size:20px;
+		font-size:26px !important;
+		line-height: 30px !important;
+	}
+
+	.main-slider-three .title{
+		font-size:20px !important;
 	}
 	
 	.main-slider .text{

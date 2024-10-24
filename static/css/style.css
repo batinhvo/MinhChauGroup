@@ -1090,7 +1090,7 @@ img{
 
 .sec-title h2{
 	position: relative;
-    color: #222222;
+    color: #243C8F;
     font-weight: 700;
     line-height: 1.3em;
     text-transform: capitalize;
@@ -3012,8 +3012,6 @@ img{
 	z-index:5 !important;
 }
 
-
-
 .main-slider .tp-dottedoverlay{
 	background: url(../images/background/background-brand-2000.png) ,linear-gradient(to top, #ffffff50, #ffffff70 100%) !important;	
 	background-size: cover !important;
@@ -3505,7 +3503,7 @@ img{
 
 .about-section .content-column .experiance{
 	position:relative;
-	color:#f7941d;
+	color:#059447;
 	font-size:18px;
 	font-weight:700;
 	line-height:1.4em;
@@ -5236,6 +5234,14 @@ img{
 	-o-transition:all 0.3s ease;
 }
 
+.news-block-two .inner-box .lower-content h3 a{
+	color: #222;
+}
+
+.news-block-two .inner-box .lower-content h3 a:hover{
+	color: #e6a251;
+}
+
 .news-block-two .inner-box .lower-content h4 a:hover{
 	color:#f7941d;
 }
@@ -6747,7 +6753,7 @@ img{
 	height:50%;
 	z-index:1;
 	opacity:0.5;
-	background: url(../images/background/background-logo-900x900.png) ,#02108b;
+	background: url(../images/background/background-logo-900x900.png) ,#021089;
 	background-size: cover;
 	-webkit-transition:all 600ms ease;
 	-ms-transition:all 600ms ease;
@@ -6764,7 +6770,7 @@ img{
 	width:0%;
 	height:50%;
 	opacity:0.5;
-	background:url(../images/background/background-brand-2000.png), #243C8F;
+	background:url(../images/background/background-brand-2000.png), #021089;
 	background-size: cover;
 	-webkit-transition:all 600ms ease;
 	-ms-transition:all 600ms ease;
@@ -6773,8 +6779,15 @@ img{
 	transition:all 600ms ease;
 }
 
+.news-section-two.blog .news-block-three .inner-box .image a:after,
 .blog-page-container .news-block-three .inner-box .image a:after{
+	background:url(../images/background/background-brand-2000.png), #243C8F;
 	background-position: 50% 72%;
+}
+
+.news-section-two.blog .news-block-three .inner-box .image a:before,
+.blog-page-container .news-block-three .inner-box .image a:before {
+	background: #243C8F;
 }
 
 .news-block-three .inner-box:hover .image a:before,

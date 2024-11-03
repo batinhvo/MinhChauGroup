@@ -4288,6 +4288,10 @@ img{
 	display:none;
 }
 
+.gallery-block.mix.hidden {
+	display: none !important;
+}
+
 /* Gallery Item */
 
 .gallery-block{
@@ -6783,7 +6787,7 @@ img{
 	width:0%;
 	height:50%;
 	opacity:0.5;
-	background:url(../images/background/background-brand-2000.png), #021089;
+	background: #243C8F;
 	background-size: cover;
 	-webkit-transition:all 600ms ease;
 	-ms-transition:all 600ms ease;
@@ -6794,7 +6798,7 @@ img{
 
 .news-section-two.blog .news-block-three .inner-box .image a:after,
 .blog-page-container .news-block-three .inner-box .image a:after{
-	background:url(../images/background/background-brand-2000.png), #243C8F;
+	background: #243C8F;
 	background-position: 50% 72%;
 }
 
@@ -13322,7 +13326,7 @@ img{
 
 
 /* room */
-.construc .inner-box {
+.constr .inner-box {
 	border: solid 1px #fff;
 	border-bottom: none;
 	box-shadow: 0px 0px 10px 2px #aeaeae;
@@ -13351,7 +13355,7 @@ img{
 }
 
 .icon-room img {
-	width: 40px !important;
+	width: 30px !important;
 	height: auto;
 }
 

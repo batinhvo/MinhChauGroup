@@ -13355,12 +13355,12 @@ img{
 }
 
 .icon-room img {
-	width: 30px !important;
+	width: 25px !important;
 	height: auto;
 }
 
 .icon-room span {
-	font-size: 20px;
+	font-size: 18px;
 	color: #000;
 }
 

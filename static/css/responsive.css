@@ -281,6 +281,14 @@
 		background-size: cover !important;
 		background-position: 30% 50% !important;
 	}
+
+	.styled-pagination li a{
+		line-height:30px;
+		height:30px;
+		font-size:14px;
+		min-width:30px;		
+		margin: 0 2px 0 2px;
+	}
 }
 
 @media (min-width: 931px) and (max-width: 940px) {

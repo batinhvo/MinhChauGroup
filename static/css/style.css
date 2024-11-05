@@ -9591,6 +9591,7 @@ img{
 	height:40px;
 	font-size:16px;
 	min-width:40px;
+	margin: 0 3px 0 3px;
 	color:#666666;
 	font-weight:400;
 	text-align:center;
@@ -9613,9 +9614,16 @@ img{
 
 .styled-pagination li a:hover,
 .styled-pagination li a.active{
-	color:#ffffff;
+	color:#ffffff !important;
 	border-color:#243C8F;
 	background-color:#243c8f;
+}
+
+.styled-pagination li.prev a.disabled:hover,
+.styled-pagination li.next a.disabled:hover {
+	color:#666 !important;
+	border-color:#ccc;
+	background-color: #fff;
 }
 
 /* News Block Four */
@@ -13332,13 +13340,18 @@ img{
 	box-shadow: 0px 0px 10px 2px #aeaeae;
 }
 
+.constr {
+	height: auto !important;
+}
+
 .icon-room {
 	background: #f2f2f2;	
 	margin: 0px;
 	box-shadow: 0px 0px 10px 2px #aeaeae;
 }
 
-.icon-room h6 {
+.icon-room h6,
+.icon-room h5 {
 	text-align: center;
 	color: #243C8F;
 	font-weight: 500;
@@ -13348,7 +13361,7 @@ img{
 	font-weight: 700;
 }
 
-.icon-room .col-6,
+.icon-room .col-4,
 .icon-room .col-12 {
 	padding: 10px;
 	border: solid 1px #fff;
@@ -13359,12 +13372,17 @@ img{
 	height: auto;
 }
 
+.icon-room .flaticon-location {
+	font-size: 25px;
+	font-weight: 700;
+}
+
 .icon-room span {
-	font-size: 18px;
+	font-size: 20px;
 	color: #000;
 }
 
-.icon-room .col-6 {
+.icon-room .col-4 {
 	display: flex;
     justify-content: space-evenly;
     align-items: flex-end;

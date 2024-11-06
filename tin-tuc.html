@@ -197,7 +197,7 @@
 						</div>
 						
 						<div class="btn-box">
-							<a href="lien-he-01.html" class="theme-btn btn-style-one"><span class="txt">LIÊN HỆ</span></a>
+							<a href="lien-he.html" class="theme-btn btn-style-one"><span class="txt">LIÊN HỆ</span></a>
 						</div>
 						
 					</div>
@@ -440,13 +440,17 @@
 			</div>
 			
 			<!--Styled Pagination-->
-			<ul class="styled-pagination text-center">
-				<li class="prev"><a href="#"><span class="fa fa-angle-double-left"></span> Prev</a></li>
-				<li><a href="#">1</a></li>
-				<li><a href="#" class="active">2</a></li>
-				<li><a href="#">3</a></li>
-				<li class="next"><a href="#">Next <span class="fa fa-angle-double-right"></span></a></li>
-			</ul>                
+			<ul class="pagination styled-pagination text-center justify-content-center">
+            	<li class="prev">
+					<a href="#" id="prev-button"><span class="fa fa-angle-double-left"></span> Prev</a>
+				</li>
+                <li id="pagination-numbers">
+					<a href="#" class="active">1</a>					
+				</li>                
+                <li class="next">
+					<a href="#" id="next-button">Next <span class="fa fa-angle-double-right"></span></a>
+				</li>
+            </ul>            
 			<!--End Styled Pagination-->
 			
 		</div>
@@ -514,8 +518,8 @@
 										<li><a href="index.html">Trang Chủ</a></li>
 										<li><a href="gioi-thieu.html">Giới Thiệu</a></li>
 										<li><a href="">Công Trình Tiêu Biểu</a></li>
-										<li><a href="blog.html">Tin Tức</a></li>
-										<li><a href="lien-he-01.html">Liên Hệ</a></li>										
+										<li><a href="tin-tuc.html">Tin Tức</a></li>
+										<li><a href="lien-he.html">Liên Hệ</a></li>										
 									</ul>
 								</div>
 							</div>
@@ -613,7 +617,7 @@
 <div class="search-popup">
 	<button class="close-search style-two"><span class="flaticon-multiply"></span></button>
 	<button class="close-search"><span class="flaticon-multiply"></span></button>
-	<form method="post" action="blog.html">
+	<form method="post" action="tin-tuc.html">
 		<div class="form-group">
 			<input type="search" name="search-field" value="" placeholder="Search Here" required="">
 			<button type="submit"><i class="fa fa-search"></i></button>
@@ -658,6 +662,116 @@
 <script src="static/js/jquery-ui.js"></script>
 <script src="static/js/script.js"></script>
 <script src="static/js/color-settings.js"></script>
+
+<script>
+    // Số item trên mỗi trang
+	const itemsPerPage = 6;
+	let currentPage = 1;
+	let currentFilter = 'news-block-three';
+
+	// Hàm hiển thị các item theo filter và trang
+	function displayItems() {
+		const items = Array.from(document.querySelectorAll('.news-block-three'));
+		items.forEach(item => item.style.display = 'none'); // Ẩn tất cả item
+
+		// Lọc các item theo filter hiện tại
+		const filteredItems = currentFilter === 'news-block-three' 
+			? items 
+			: items.filter(item => item.classList.contains(currentFilter.substring(1)));
+
+		// Xác định số trang
+		const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
+
+		// Hiển thị các item theo trang hiện tại
+		const start = (currentPage - 1) * itemsPerPage;
+		const end = start + itemsPerPage;
+		filteredItems.slice(start, end).forEach(item => item.style.display = 'block');
+
+		// Cập nhật các nút phân trang
+		updatePagination(totalPages);
+	}
+
+	// Hàm cập nhật các nút phân trang
+	function updatePagination(totalPages) {
+		const pagination = document.getElementById('pagination-numbers');
+		pagination.innerHTML = ''; // Xóa các nút cũ
+
+		// Nút "Previous"
+		const prevButton = document.getElementById('prev-button');
+		prevButton.classList.toggle('disabled', currentPage === 1);
+
+		// Tạo các nút phân trang
+		if (totalPages <= 3) {
+			for (let i = 1; i <= totalPages; i++) {
+				createPageButton(i);
+			}
+		} else {
+			createPageButton(1);
+			if (currentPage <= 2) {
+				createPageButton(2);
+			} 
+			if (currentPage > 2 && currentPage < totalPages) {
+				createEllipsis();
+				createPageButton(currentPage);
+			}
+			if (currentPage < totalPages - 1) {
+				createEllipsis();
+			} 
+			if (currentPage == totalPages) {
+				createEllipsis();
+				createPageButton(currentPage - 1);
+			} 
+			createPageButton(totalPages);
+		}
+
+		// Nút "Next"
+		const nextButton = document.getElementById('next-button');
+		nextButton.classList.toggle('disabled', currentPage === totalPages);
+	}
+
+	// Hàm tạo nút trang
+	function createPageButton(page) {
+		const pagination = document.getElementById('pagination-numbers');
+		const button = document.createElement('a');
+		button.textContent = page;
+		button.classList.toggle('active', page === currentPage);
+		button.addEventListener('click', () => {
+			currentPage = page;
+			displayItems();
+		});
+		pagination.appendChild(button);
+	}
+
+	// Hàm tạo dấu "..."
+	function createEllipsis() {
+		const pagination = document.getElementById('pagination-numbers');
+		const ellipsis = document.createElement('span');
+		ellipsis.textContent = '...';
+		pagination.appendChild(ellipsis);
+	}
+
+	// Sự kiện cho nút "Previous"
+	document.getElementById('prev-button').addEventListener('click', (e) => {
+		e.preventDefault();
+		if (currentPage > 1) {
+			currentPage--;
+			displayItems();
+		}
+	});
+
+	// Sự kiện cho nút "Next"
+	document.getElementById('next-button').addEventListener('click', (e) => {
+		e.preventDefault();
+		const items = Array.from(document.querySelectorAll('.news-block-three'));
+		const totalPages = Math.ceil(items.length / itemsPerPage);
+		if (currentPage < totalPages) {
+			currentPage++;
+			displayItems();
+		}
+	});
+
+	displayItems();
+</script>
 
 </body>
 </html>

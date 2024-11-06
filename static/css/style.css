@@ -1510,7 +1510,7 @@ img{
 	color:#444444 !important;
 }
 
-.sticky-header .main-menu .navigation > li > a:before{
+/* .sticky-header .main-menu .navigation > li > a:before{
 	font-family: 'FontAwesome';
     content: "\f107";
     position: absolute;
@@ -1523,11 +1523,11 @@ img{
     -webkit-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
-}
+} */
 
 .sticky-header .main-menu .navigation > li:hover > a,
 .sticky-header .main-menu .navigation > li.current > a{
-	color:#f7941d;
+	border-bottom: solid 2px #444;
 	background-color:inherit !important;
 }
 
@@ -5677,8 +5677,8 @@ img{
 }
 
 .main-footer .footer-bottom .social-box li a:hover{
-	background-color:#02108b;
-	border-color:#02108b;
+	background-color:#e0a85e;
+	border-color:#e0a85e;
 	color:#ffffff;
 }
 
@@ -11940,7 +11940,7 @@ img{
 
 .map-section{
 	position: relative;
-	padding: 110px 0px 90px;
+	padding-bottom: 90px;
 }
 
 .map-section .map-outer{
@@ -11980,7 +11980,7 @@ img{
 
 .contact-info-section{
 	position:relative;
-	padding-bottom:70px;
+	padding:70px 0px 50px 0px;
 }
 
 .contact-info-section .info-box{
@@ -11991,6 +11991,10 @@ img{
 .contact-info-section .info-box .icon{
 	position:relative;
 	margin-bottom:15px;
+}
+
+.icon .w-50.pl-5 {
+	padding-left: 2rem;
 }
 
 .contact-info-section .info-box h5{
@@ -13386,4 +13390,9 @@ img{
 	display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
+}
+
+.font-icon {
+	width: 20px !important;
+	height: auto;
 }

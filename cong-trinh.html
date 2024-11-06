@@ -242,7 +242,7 @@
 						</div>
 						
 						<div class="btn-box">
-							<a href="lien-he-01.html" class="theme-btn btn-style-one"><span class="txt">LIÊN HỆ</span></a>
+							<a href="lien-he.html" class="theme-btn btn-style-one"><span class="txt">LIÊN HỆ</span></a>
 						</div>
 						
 					</div>
@@ -280,7 +280,7 @@
     <!-- End Page Title -->
 	
 	<!-- Gallery Section -->
-	<section class="gallery-section">
+	<section class="gallery-section" style="background-image:url(static/images/background/pattern-5.png)">
 		<div class="auto-container">
 			<!-- Sec Title -->
 			<div class="sec-title centered">
@@ -294,7 +294,7 @@
 					</div>
 					MINH CHÂU GROUP
 				</div>
-				<h2>CÔNG TRÌNH</h2>
+				<h2>NHỮNG CÔNG TRÌNH CỦA CHÚNG TÔI</h2>
 			</div>
 			<!--MixitUp Galery-->
             <div class="mixitup-gallery">
@@ -327,7 +327,7 @@
 						</div>
 						<div class="row icon-room">		
 							<div class="col-12 px-0">								
-								<a href="chi-tiet-cong-trinh.html">									
+								<a href="chi-tiet-cong-trinh.html#1">									
 									<h6><span class="flaticon-location"></span> Phước Lý, Long An</h6>
 								</a>
 							</div>						
@@ -1076,7 +1076,7 @@
 										<li><a href="gioi-thieu.html">Giới Thiệu</a></li>
 										<li><a href="">Công Trình Tiêu Biểu</a></li>
 										<li><a href="tin-tuc.html">Tin Tức</a></li>
-										<li><a href="lien-he-01.html">Liên Hệ</a></li>										
+										<li><a href="lien-he.html">Liên Hệ</a></li>										
 									</ul>
 								</div>
 							</div>
@@ -1259,31 +1259,25 @@
 
 		// Tạo các nút phân trang
 		if (totalPages <= 3) {
-			// Hiển thị tất cả các trang nếu tổng số trang <= 3
 			for (let i = 1; i <= totalPages; i++) {
 				createPageButton(i);
 			}
 		} else {
-			// Hiển thị theo quy tắc yêu cầu
-			createPageButton(1); // Nút trang đầu
-			if (currentPage == 2) createPageButton(2);
-
-			if (currentPage > 2) createEllipsis(); // Dấu "..." nếu trang hiện tại > 2
-
-			if (currentPage => 3) {
-				// Nếu trang hiện tại là 3, hiển thị trang 2 và trang 3
+			createPageButton(1);
+			if (currentPage <= 2) {
+				createPageButton(2);
+			} 
+			if (currentPage > 2 && currentPage < totalPages) {
 				createEllipsis();
-				createPageButton(3);
+				createPageButton(currentPage);
 			}
-			// } else if (currentPage < totalPages) {
-			// 	// Nếu trang hiện tại không phải là 3, hiển thị trang hiện tại
-			// 	createPageButton(currentPage);
-			// }
-
-			// Hiển thị dấu "..." nếu trang hiện tại < trang cuối - 1
-			if (currentPage < totalPages - 1) createEllipsis();
-
-			// Nút trang cuối
+			if (currentPage < totalPages - 1) {
+				createEllipsis();
+			} 
+			if (currentPage == totalPages) {
+				createEllipsis();
+				createPageButton(currentPage - 1);
+			} 
 			createPageButton(totalPages);
 		}
 
@@ -1336,15 +1330,14 @@
 	// Thêm sự kiện click vào các tab lọc
 	document.querySelectorAll('.filter').forEach(button => {
 		button.addEventListener('click', () => {
-			currentFilter = button.getAttribute('data-filter'); // Cập nhật filter
-			currentPage = 1; // Reset về trang đầu
+			currentFilter = button.getAttribute('data-filter');
+			currentPage = 1;
 			document.querySelectorAll('.filter').forEach(btn => btn.classList.remove('active'));
 			button.classList.add('active');
-			displayItems(); // Hiển thị item theo filter mới
+			displayItems();
 		});
 	});
 
-	// Khởi chạy hiển thị
 	displayItems();
 </script>
 

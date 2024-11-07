@@ -3025,7 +3025,7 @@ img{
     color: #059447;
     font-weight: 700;
     font-size: 22px;
-    line-height: 1.4em;
+    line-height: 1.6em;
     margin-bottom: 30px;
 	font-family: 'Montserrat', sans-serif;
 	text-shadow: 1px 1px #000;
@@ -5711,7 +5711,7 @@ img{
 
 .services-section-two{
 	position:relative;
-	padding:95px 0px 110px;
+	padding:160px 0px 110px;
 }
 
 .services-section-two .inner-container{

@@ -587,4 +587,20 @@
 		handlePreloader();
 	});	
 
+	$(window).scroll(function() {
+		if ($(this).scrollTop() < 150) {
+			$(".btn-scroll").fadeOut(); // Hiển thị nút với hiệu ứng mờ dần
+		} else {
+			$(".btn-scroll").fadeIn(); // Ẩn nút với hiệu ứng mờ dần
+		}
+	});
+
+	$(window).on('load', function() {
+		if ($(this).scrollTop() < 150) {
+			$(".btn-scroll").fadeOut(); // Hiển thị nút với hiệu ứng mờ dần
+		} else {
+			$(".btn-scroll").fadeIn(); // Ẩn nút với hiệu ứng mờ dần
+		}
+	});
+
 })(window.jQuery);

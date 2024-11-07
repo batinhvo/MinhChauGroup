@@ -360,7 +360,7 @@
 	}
 
 	.main-slider .tp-dottedoverlay{
-		background: url(../images/background/background-brand-2000.png) ,linear-gradient(to top, #ffffff70, #ffffffe3 100%) !important;	
+		background: url(../images/background/background-brand-2000.png) !important;	
 		background-size: cover !important;
 		background-position: 30% 50% !important;
 	}

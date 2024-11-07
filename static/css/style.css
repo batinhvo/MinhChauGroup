@@ -9196,7 +9196,7 @@ img{
 	color:#777777;
 	font-size:16px;
 	line-height:1.7em;
-	margin-bottom:20px;
+	margin-bottom:2px;
 }
 
 .project-info-boxed{
@@ -13382,6 +13382,7 @@ img{
 }
 
 .icon-room span {
+	line-height: 1;
 	font-size: 20px;
 	color: #000;
 }
@@ -13395,4 +13396,32 @@ img{
 .font-icon {
 	width: 20px !important;
 	height: auto;
+	padding-bottom: 10px;
+}
+
+.btn-scroll a {
+	display: block;
+	position: fixed;
+	font-size: 20px;
+    right: 1.5%;
+	line-height: 50px;
+    bottom: 250px;
+    height: 50px;
+    cursor: pointer;
+    width: 50px;
+    color: #fff;
+    text-align: center;
+	border-radius: 5px;
+	border: solid 1px #1b3559;
+    z-index: 20;
+    background-image: linear-gradient(to right, #1b3558 0%, #243c8f 100%);
+}
+
+.btn-scroll a.zalo {
+    bottom: 180px;
+}
+
+.btn-scroll a:hover {
+	background-image: linear-gradient(to left, #F7951D 0%, #FFC009 100%);
+	border: solid 1px #F7951D;
 }

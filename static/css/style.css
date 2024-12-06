@@ -314,8 +314,10 @@ h6{
 }
 
 .btn-style-one .txt{
-	position:relative;
-	z-index:1;
+	display: inline-block;
+	transform: skewX(15deg) !important;
+	position: relative;
+	z-index: 1;
 }
 
 .btn-style-one:hover::before{
@@ -5284,7 +5286,7 @@ img{
 	background-image: -o-linear-gradient(top, #222221 0%, #020302 100%);
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #222221), color-stop(100, #020302));
 	background-image: -webkit-linear-gradient(top, #222221 0%, #020302 100%);
-	background: #1b3558;;
+	background: #152b4af5;
 }
 
 .main-footer .widgets-section{
@@ -7910,7 +7912,7 @@ img{
 	font-size:18px;
 	font-weight:300;
 	text-transform:capitalize;
-	text-shadow: 1px 1px #fff;
+	text-shadow: 1px 1px #7c5d00;
 }
 
 .page-breadcrumb li:after{
@@ -7935,7 +7937,7 @@ img{
 
 .page-breadcrumb li a{
 	color:#059447;
-	text-shadow: 1px 1px #fff;
+	text-shadow: 1px 1px #004821;
 	font-weight:300;
 	text-transform: capitalize;
 	transition:all 0.3s ease;

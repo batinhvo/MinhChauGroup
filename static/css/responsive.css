@@ -260,6 +260,13 @@
 	.sticky-header .btn-style-one {
 		transform: skewX(-30deg) !important; 
 	}
+
+	.btn-style-one .txt {
+		display: inline-block;
+		transform: skewX(30deg) !important;
+		position: relative;
+		z-index: 1;
+	}
 }
 
 @media (max-width: 420px) {
@@ -398,7 +405,7 @@
 	}
 	
 	.main-menu .navigation > li > a{
-		font-size:14px;
+		font-size:13px;
 	}
 	
 	.main-header .options-box{
